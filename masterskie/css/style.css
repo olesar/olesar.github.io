@@ -5,6 +5,7 @@ a { color: #777; text-decoration: none; }
 a:hover { color: #555; text-decoration: none; }
 a.svg { position: relative; display: inline-block; }
 a.svg:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left:0; }
+a.anchor {display: block; position: relative; top: -100px; visibility: hidden; }
 li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #wrap { margin: 0 auto; background: #fff; }
 #header { height: 80px; background: url("http://papyri.info/images/header.jpg") no-repeat; margin: 0 0 10px 0; position: fixed; top: 0; width: 100%; }
