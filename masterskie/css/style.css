@@ -25,3 +25,11 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 .def-span {}
 .field-name {color:#ccc; font-weight: bold; }
 .post-span {color: #eee; font-size: 0.8em;}
+div#hd {
+background: url("http://papyri.info/images/header.jpg");
+color: white;
+/*background: #5C0303;*/
+font-family: Georgia, serif;
+height:85px;
+text-align:left;
+}
