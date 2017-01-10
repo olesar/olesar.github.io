@@ -24,4 +24,4 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #footer a { color : #ddd; text-decoration: none; }
 .def-span {}
 .field-name {color:#ccc; font-weight: bold; }
-.post-span {font-size: 0.8em;}
+.post-span {color: #eee; font-size: 0.8em;}
