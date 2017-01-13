@@ -26,3 +26,4 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 .def-span {}
 .field-name {color:#ccc; font-weight: bold; }
 .post-span {font-size: 0.8em;}
+.no-svg #header {background-image: url(https://github.com/olesar/olesar.github.io/tree/master/masterskie/img/background.png); }
