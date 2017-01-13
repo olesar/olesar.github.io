@@ -15,7 +15,7 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #headerlinks {float: right; padding: 30px 20px 0 0; }
 #headerlinks a {color:#fff; padding: 0 10px; }
 #headerlinks a:hover {color:#fff; }
-#sidebar { width: 150px; height:250px; background: #FFEEB5; color: #666; margin-right: 20px; position: fixed; top: 0; right: 0; overflow-y: auto; } 
+#sidebar { width: 150px; height:100px; background: #FFEEB5; color: #666; margin-right: 20px; position: fixed; top: 0; right: 0; overflow-y: auto; } 
 #sidebar .box { margin-bottom: 10px; padding: 10px 3px; color: #666; }
 #sidebar h2 { font-size: 1.2em; font-weight: 100; padding: 3px; }
 #content { margin-left: 20px; margin-right: 190px; margin-top: 80px; text-align: justify; color: #777; }
