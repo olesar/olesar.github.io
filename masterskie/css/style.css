@@ -8,7 +8,7 @@ a.svg:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left
 a.anchor {display: block; position: relative; top: -100px; visibility: hidden; }
 li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #wrap { margin: 0 auto; background: #fff; }
-#header { height: 80px; background: url("http://papyri.info/images/header.jpg") no-repeat; margin: 0 0 10px 0; position: fixed; top: 0; width: 100%; }
+#header { height: 80px; background: url("http://papyri.info/images/header.jpg") no-repeat; margin: 0 0 10px 0; position: fixed; top: 0; width: auto; }
 #header a { color: #fff; text-decoration: none; }
 #header h1 {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
 #header h2 {color: #eee; font-size: 1.2em; padding: 0 0 0 20px; font-weight: 100; }
