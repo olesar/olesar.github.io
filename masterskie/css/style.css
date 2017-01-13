@@ -1,5 +1,5 @@
 * { padding: 0; margin: 0; } 
-body { background: #F5F5F5 url(https://github.com/olesar/olesar.github.io/tree/master/masterskie/img/background.png); font-family: 'Roboto Condensed', sans-serif; font-size: .90em; padding: 0; margin: 0; }
+body { background: #F5F5F5 url(img/background.png); font-family: 'Roboto Condensed', sans-serif; font-size: .90em; padding: 0; margin: 0; }
 img { border: none; }
 a { color: #777; text-decoration: none; }
 a:hover { color: #555; text-decoration: none; }
@@ -8,7 +8,7 @@ a.svg:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left
 a.anchor {display: block; position: relative; top: -100px; visibility: hidden; }
 li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #wrap { margin: 0 auto; background: #fff; }
-#header { height: 80px; width: 1200px; background: url(https://github.com/olesar/olesar.github.io/tree/master/masterskie/img/Triangle_p2-b.svg) no-repeat; background-size: 80px 1200px; margin: 0 0 10px 0; position: absolute; top: 0; }
+#header { height: 80px; width: 1200px; background: url(https://upload.wikimedia.org/wikipedia/commons/c/cc/Triangle_p2-b.svg) no-repeat; background-size: 80px 1200px; margin: 0 0 10px 0; position: absolute; top: 0; }
 #header a { color: #fff; text-decoration: none; }
 #header h1 {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
 #header h2 {color: #eee; font-size: 1.2em; padding: 0 0 0 20px; font-weight: 100; }
