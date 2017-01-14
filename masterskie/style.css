@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,300,700);
 * { padding: 0; margin: 0; } 
-body { background: #F5F5F5 url(img/background.png); font-family: 'Roboto Condensed', sans-serif; font-size: .90em; padding: 0; margin: 0; }
+body { background: #F5F5F5 url(img/background.png); font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: .90em; padding: 0; margin: 0; }
+/*  font-family: 'Roboto Condensed', sans-serif; } */
 img { border: none; }
 a { color: color:#39c; font-weight:400; text-decoration: none; }
 a:hover { color: #555; text-decoration: none; }
@@ -12,7 +14,6 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 /* #header .no-svg {background-image: url(https://github.com/olesar/olesar.github.io/raw/master/masterskie/img/background.png); } */
 #header a { color: #fff; text-decoration: none; }
 #header h1 {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
-#header h1 a {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
 #header h2 {color: #eee; font-size: 1.2em; padding: 0 0 0 20px; font-weight: 100; }
 #headerlinks {float: right; padding: 30px 20px 0 0; }
 #headerlinks a {color:#fff; padding: 0 10px; }
@@ -21,6 +22,7 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #sidebar .box { margin-bottom: 10px; padding: 10px 3px; color: #666; }
 #sidebar h2 { font-size: 1.2em; font-weight: 100; padding: 3px; }
 #sidebar h2 a { color: color:#777; font-weight:400; text-decoration: none; }
+#sidebar h2 a:hover { color: #777; text-decoration: none; }
 #content { margin-left: 20px; margin-right: 190px; margin-top: 80px; text-align: justify; color: #777; }
 #content h2 { color: #555; font-size: 1.4em; font-weight: 200;}
 #content p { margin: 10px 0 20px 0; line-height: 25px;}
