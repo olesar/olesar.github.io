@@ -12,6 +12,7 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 /* #header .no-svg {background-image: url(https://github.com/olesar/olesar.github.io/raw/master/masterskie/img/background.png); } */
 #header a { color: #fff; text-decoration: none; }
 #header h1 {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
+#header h1 a {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
 #header h2 {color: #eee; font-size: 1.2em; padding: 0 0 0 20px; font-weight: 100; }
 #headerlinks {float: right; padding: 30px 20px 0 0; }
 #headerlinks a {color:#fff; padding: 0 10px; }
@@ -25,6 +26,7 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #content p { margin: 10px 0 20px 0; line-height: 25px;}
 #footer { clear: both; background: #FFEEB5; color: #666; text-align: left; margin: 20px 0px 0px 0px; padding: 25px 20px; font-size: .9em; }
 #footer a { text-decoration: none; }
+#pictureshop {height:338px; width:600px; }
 .def-span {}
 .field-name {color:#ccc; font-weight: bold; }
 .post-span {font-size: 0.8em;}
