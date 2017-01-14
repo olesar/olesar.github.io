@@ -9,7 +9,7 @@ a.anchor {display: block; position: relative; top: -100px; visibility: hidden; }
 li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #wrap { margin: 0 auto; background: #fff; }
 #header { height: 80px; width: 1200px; background: url(https://raw.githubusercontent.com/olesar/olesar.github.io/master/masterskie/img/Triangle_p2-b.svg) no-repeat; background-size: contain; margin: 0 0 10px 0; position: absolute; top: 0; }
-/* #header .no-svg {background-image: url(https://github.com/olesar/olesar.github.io/tree/master/masterskie/img/background.png); } */
+/* #header .no-svg {background-image: url(https://github.com/olesar/olesar.github.io/raw/master/masterskie/img/background.png); } */
 #header a { color: #fff; text-decoration: none; }
 #header h1 {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
 #header h2 {color: #eee; font-size: 1.2em; padding: 0 0 0 20px; font-weight: 100; }
@@ -19,6 +19,7 @@ li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #sidebar { width: 150px; height:100%; background: #FFEEB5; color: #666; margin-right: 20px; position: fixed; top: 0; right: 0; overflow-y: auto; } 
 #sidebar .box { margin-bottom: 10px; padding: 10px 3px; color: #666; }
 #sidebar h2 { font-size: 1.2em; font-weight: 100; padding: 3px; }
+#sidebar h2 a { color: color:#39c; font-weight:400; text-decoration: none; }
 #content { margin-left: 20px; margin-right: 190px; margin-top: 80px; text-align: justify; color: #777; }
 #content h2 { color: #555; font-size: 1.4em; font-weight: 200;}
 #content p { margin: 10px 0 20px 0; line-height: 25px;}
