@@ -10,7 +10,7 @@ a.svg:after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left
 a.anchor {display: block; position: relative; top: -100px; visibility: hidden; }
 li { color: #036DA7; list-style-type: none; margin-bottom: 6px; }
 #wrap { margin: 0 auto; background: #fff; }
-#header { background: #39c; margin: 0 0 10px 0; position: absolute; top: 0; }
+#header { height: 80px; width: 2000px; background: #39c; background-size: contain; margin: 0 0 10px 0; position: absolute; top: 0; }
 /* #header .no-svg {background-image: url(https://github.com/olesar/olesar.github.io/raw/master/masterskie/img/background.png); } */
 #header a { color: #fff; text-decoration: none; }
 #header h1 {color: #fff; font-size: 2em; padding: 20px 0 0 20px; font-weight: 100; }
