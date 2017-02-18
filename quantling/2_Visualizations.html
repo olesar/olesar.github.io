@@ -279,7 +279,8 @@ freq %&gt;%
 <ul>
 <li>R base</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
 <span class="kw">rug</span>(homo$s.duration.ms)
 <span class="kw">rug</span>(homo$vowel.duration.ms, <span class="dt">side =</span> <span class="dv">2</span>)</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-62-1.png" width="768" /></p>
@@ -297,6 +298,36 @@ freq %&gt;%
 <span class="st">  </span><span class="kw">geom_rug</span>()</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-64-1.png" width="768" /></p>
 </div>
+
+<div id="scaterplot-lines" class="slide section level3">
+<h1>1.8 Scaterplot: rug</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<p># placeholder plot - prints nothing at all</p>
+<p>empty &lt;- ggplot() + geom_point(aes(1, 1), colour = "white") + theme(plot.background = element_blank(),</p>
+<p>panel.grid.major = element_blank(), panel.grid.minor = element_blank(),</p>
+<p>panel.border = element_blank(), panel.background = element_blank(), axis.title.x = element_blank(),</p>
+<p>axis.title.y = element_blank(), axis.text.x = element_blank(), axis.text.y = element_blank(),</p>
+<p>axis.ticks = element_blank())</p>
+<br/>
+<p># scatterplot of x and y variables</p>
+<p>scatter &lt;- ggplot(xy, aes(xvar, yvar)) + geom_point(aes(color = zvar)) + scale_color_manual(values = c("orange",</p>
+<p>"purple")) + theme(legend.position = c(1, 1), legend.justification = c(1,</p>
+<p>1))</p>
+<br/>
+<p># marginal density of x - plot on top</p>
+<p>plot_top &lt;- ggplot(xy, aes(xvar, fill = zvar)) + geom_density(alpha = 0.5) +</p>
+<p>scale_fill_manual(values = c("orange", "purple")) + theme(legend.position = "none")</p>
+<br/>
+<p># marginal density of y - plot on the right</p>
+<p>plot_right &lt;- ggplot(xy, aes(yvar, fill = zvar)) + geom_density(alpha = 0.5) +</p>
+<p>coord_flip() + scale_fill_manual(values = c("orange", "purple")) + theme(legend.position = "none")</p>
+<br/>
+<p># arrange the plots together, with appropriate height and width for each row and column</p>
+<p>grid.arrange(plot_top, empty, scatter, plot_right, ncol = 2, nrow = 2, widths = c(4,1), heights = c(1, 4))</p>
+</code></pre></div>
+<p><img src="http://felixfan.github.io/figure/ggplot2-Cheatsheet-20.png" /></p>
+</div>
+
 <div id="scaterplot-lines" class="slide section level3">
 <h1>1.9 Scaterplot: lines</h1>
 <ul>
