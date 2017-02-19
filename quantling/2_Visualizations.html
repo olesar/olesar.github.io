@@ -75,8 +75,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>speakers age (<em>age</em>)</li>
 </ul>
 <p>Download data</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;http://goo.gl/Zjr9aF&quot;</span>)
-homo</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<p>homo &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;http://goo.gl/Zjr9aF&quot;</span>) <br />
+homo </p>
+</code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["speaker"],"name":[1],"type":["fctr"],"align":["left"]},{"label":["s.duration.ms"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["vowel.duration.ms"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["average.f0.Hz"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["f0.range.Hz"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["perceived.as.homo"],"name":[6],"type":["int"],"align":["right"]},{"label":["perceived.as.hetero"],"name":[7],"type":["int"],"align":["right"]},{"label":["perceived.as.homo.percent"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["orientation"],"name":[9],"type":["fctr"],"align":["left"]},{"label":["age"],"name":[10],"type":["int"],"align":["right"]}],"data":[{"1":"A","2":"61.40","3":"112.60","4":"119.51","5":"52.5","6":"7","7":"18","8":"0.28","9":"hetero","10":"30"},{"1":"B","2":"63.90","3":"126.49","4":"100.29","5":"114.0","6":"20","7":"5","8":"0.80","9":"hetero","10":"19"},{"1":"C","2":"55.08","3":"126.81","4":"114.90","5":"103.2","6":"9","7":"16","8":"0.36","9":"homo","10":"29"},{"1":"D","2":"78.11","3":"119.17","4":"126.61","5":"58.8","6":"15","7":"10","8":"0.60","9":"homo","10":"36"},{"1":"E","2":"64.71","3":"93.68","4":"130.76","5":"37.4","6":"10","7":"15","8":"0.40","9":"homo","10":"27"},{"1":"F","2":"67.00","3":"127.87","4":"150.79","5":"42.0","6":"17","7":"8","8":"0.68","9":"homo","10":"33"},{"1":"G","2":"65.39","3":"147.52","4":"128.96","5":"118.2","6":"20","7":"5","8":"0.80","9":"hetero","10":"28"},{"1":"H","2":"62.46","3":"120.13","4":"105.26","5":"55.7","6":"21","7":"4","8":"0.84","9":"hetero","10":"22"},{"1":"I","2":"60.45","3":"140.44","4":"109.86","5":"96.4","6":"20","7":"5","8":"0.80","9":"homo","10":"22"},{"1":"J","2":"59.59","3":"121.01","4":"123.90","5":"111.7","6":"8","7":"17","8":"0.32","9":"homo","10":"40"},{"1":"K","2":"62.94","3":"137.37","4":"119.48","5":"87.6","6":"21","7":"4","8":"0.84","9":"homo","10":"30"},{"1":"L","2":"53.31","3":"112.05","4":"146.20","5":"57.8","6":"8","7":"17","8":"0.32","9":"hetero","10":"25"},{"1":"M","2":"45.13","3":"133.74","4":"155.34","5":"100.5","6":"9","7":"16","8":"0.36","9":"hetero","10":"20"},{"1":"N","2":"57.67","3":"118.02","4":"121.48","5":"37.4","6":"4","7":"21","8":"0.16","9":"hetero","10":"29"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -86,9 +88,11 @@ homo</code></pre></div>
 <div id="data-frame-tibble-dplyr" class="slide section level3">
 <h1>0.a Data Frame → Tibble (dplyr)</h1>
 <p>Tibble is a wrapper that prettifies the outlook of data frames.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">library</span>(tidyverse)
 homo &lt;-<span class="st"> </span><span class="kw">tbl_df</span>(homo)
-homo</code></pre></div>
+homo
+</code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["speaker"],"name":[1],"type":["fctr"],"align":["left"]},{"label":["s.duration.ms"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["vowel.duration.ms"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["average.f0.Hz"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["f0.range.Hz"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["perceived.as.homo"],"name":[6],"type":["int"],"align":["right"]},{"label":["perceived.as.hetero"],"name":[7],"type":["int"],"align":["right"]},{"label":["perceived.as.homo.percent"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["orientation"],"name":[9],"type":["fctr"],"align":["left"]},{"label":["age"],"name":[10],"type":["int"],"align":["right"]}],"data":[{"1":"A","2":"61.40","3":"112.60","4":"119.51","5":"52.5","6":"7","7":"18","8":"0.28","9":"hetero","10":"30"},{"1":"B","2":"63.90","3":"126.49","4":"100.29","5":"114.0","6":"20","7":"5","8":"0.80","9":"hetero","10":"19"},{"1":"C","2":"55.08","3":"126.81","4":"114.90","5":"103.2","6":"9","7":"16","8":"0.36","9":"homo","10":"29"},{"1":"D","2":"78.11","3":"119.17","4":"126.61","5":"58.8","6":"15","7":"10","8":"0.60","9":"homo","10":"36"},{"1":"E","2":"64.71","3":"93.68","4":"130.76","5":"37.4","6":"10","7":"15","8":"0.40","9":"homo","10":"27"},{"1":"F","2":"67.00","3":"127.87","4":"150.79","5":"42.0","6":"17","7":"8","8":"0.68","9":"homo","10":"33"},{"1":"G","2":"65.39","3":"147.52","4":"128.96","5":"118.2","6":"20","7":"5","8":"0.80","9":"hetero","10":"28"},{"1":"H","2":"62.46","3":"120.13","4":"105.26","5":"55.7","6":"21","7":"4","8":"0.84","9":"hetero","10":"22"},{"1":"I","2":"60.45","3":"140.44","4":"109.86","5":"96.4","6":"20","7":"5","8":"0.80","9":"homo","10":"22"},{"1":"J","2":"59.59","3":"121.01","4":"123.90","5":"111.7","6":"8","7":"17","8":"0.32","9":"homo","10":"40"},{"1":"K","2":"62.94","3":"137.37","4":"119.48","5":"87.6","6":"21","7":"4","8":"0.84","9":"homo","10":"30"},{"1":"L","2":"53.31","3":"112.05","4":"146.20","5":"57.8","6":"8","7":"17","8":"0.32","9":"hetero","10":"25"},{"1":"M","2":"45.13","3":"133.74","4":"155.34","5":"100.5","6":"9","7":"16","8":"0.36","9":"hetero","10":"20"},{"1":"N","2":"57.67","3":"118.02","4":"121.48","5":"37.4","6":"4","7":"21","8":"0.16","9":"hetero","10":"29"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -101,21 +105,27 @@ homo</code></pre></div>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-42-1.png" width="768" /></p>
 <ul>
 <li>ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> homo, <span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
-<span class="st">  </span><span class="kw">geom_point</span>()</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">ggplot</span>(<span class="dt">data =</span> homo, <span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
+<span class="st">  </span><span class="kw">geom_point</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-43-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(average.f0.Hz, age))+
 <span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>)+
-<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color =</span> orientation))</code></pre></div>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color =</span> orientation))
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-44-1.png" width="768" /></p>
 </div>
 
@@ -124,16 +134,20 @@ homo</code></pre></div>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>)[homo$orientation])</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>)[homo$orientation])
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-45-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms,
              <span class="dt">color =</span> orientation)) +
-<span class="st">  </span><span class="kw">geom_point</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_point</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-46-1.png" width="768" /></p>
 </div>
 
@@ -143,10 +157,14 @@ homo</code></pre></div>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">pch =</span> <span class="kw">c</span>(<span class="dv">16</span>, <span class="dv">17</span>)[homo$orientation])</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">pch =</span> <span class="kw">c</span>(<span class="dv">16</span>, <span class="dv">17</span>)[homo$orientation])
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-47-1.png" width="768" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="dv">1</span>:<span class="dv">32</span>, <span class="dt">pch =</span> <span class="dv">1</span>:<span class="dv">32</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(<span class="dv">1</span>:<span class="dv">32</span>, <span class="dt">pch =</span> <span class="dv">1</span>:<span class="dv">32</span>)
+</code></pre></div>
 <pre><code>## Warning in plot.xy(xy, type, ...): не разработанное pch-значение &#39;26&#39;</code></pre>
 <pre><code>## Warning in plot.xy(xy, type, ...): не разработанное pch-значение &#39;27&#39;</code></pre>
 <pre><code>## Warning in plot.xy(xy, type, ...): не разработанное pch-значение &#39;28&#39;</code></pre>
@@ -157,10 +175,12 @@ homo</code></pre></div>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms,
              <span class="dt">shape =</span> orientation)) +
-<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;green&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">color =</span> <span class="st">&quot;green&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-48-1.png" width="768" /></p>
 </div>
 
@@ -169,22 +189,28 @@ homo</code></pre></div>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">cex =</span> homo$age/<span class="dv">20</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">cex =</span> homo$age/<span class="dv">20</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-49-1.png" width="768" /></p>
 <ul>
 <li>:(</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">cex =</span> homo$age)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">cex =</span> homo$age)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-50-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms,
              <span class="dt">size =</span> age)) +
-<span class="st">  </span><span class="kw">geom_point</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_point</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-51-1.png" width="768" /></p>
 </div>
 <div id="scaterplot-text" class="slide section level3">
@@ -192,16 +218,20 @@ homo</code></pre></div>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">pch =</span> <span class="kw">c</span>(<span class="st">&quot;⚤&quot;</span>, <span class="st">&quot;⚣&quot;</span>)[homo$orientation])</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">pch =</span> <span class="kw">c</span>(<span class="st">&quot;⚤&quot;</span>, <span class="st">&quot;⚣&quot;</span>)[homo$orientation])
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-52-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">levels</span>(homo$orientation) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;⚣&quot;</span>, <span class="st">&quot;⚤&quot;</span>)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">levels</span>(homo$orientation) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;⚣&quot;</span>, <span class="st">&quot;⚤&quot;</span>)
 homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms, <span class="dt">label =</span> orientation, <span class="dt">fill =</span> orientation)) +
-<span class="st">  </span><span class="kw">geom_label</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_label</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-53-1.png" width="768" /></p>
 </div>
 <div id="scaterplot-title" class="slide section level3">
@@ -209,19 +239,23 @@ homo %&gt;%
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">main =</span> <span class="st">&quot;length of [s] vs. length of vowels&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">main =</span> <span class="st">&quot;length of [s] vs. length of vowels&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-55-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_point</span>()+
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;length of [s] vs. length of vowels&quot;</span>,
        <span class="dt">subtitle =</span> <span class="st">&quot;based on 14 speakers of Cantonese&quot;</span>,
        <span class="dt">caption =</span> <span class="st">&quot;data from [Chi kuk 2007]&quot;</span>)+
-<span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;It looks nice!&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">ggtitle</span>(<span class="st">&quot;It looks nice!&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-56-1.png" width="768" /></p>
 </div>
 <div id="scaterplot-axis" class="slide section level3">
@@ -229,17 +263,21 @@ homo %&gt;%
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
-     <span class="dt">xlab =</span> <span class="st">&quot;duration of [s] in ms&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;vowel duration in ms&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms,
+     <span class="dt">xlab =</span> <span class="st">&quot;duration of [s] in ms&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;vowel duration in ms&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-57-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_point</span>()+
 <span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;duration of [s] in ms&quot;</span>)+
-<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;vowel duration in ms&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;vowel duration in ms&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-58-1.png" width="768" /></p>
 </div>
 <div id="log-scales" class="slide section level3">
@@ -249,32 +287,38 @@ homo %&gt;%
 
 </div>
 <p>Lets use the frequency dictionary for Russian</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">freq &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://goo.gl/TlX7xW&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+freq &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://goo.gl/TlX7xW&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>)
 freq %&gt;%
 <span class="st">  </span><span class="kw">arrange</span>(<span class="kw">desc</span>(Freq.ipm.)) %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">slice</span>(<span class="dv">1</span>:<span class="dv">200</span>) %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(Rank, Freq.ipm.)) +
 <span class="st">  </span><span class="kw">geom_point</span>() +
 <span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;&quot;</span>) +
-<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;ipm&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;ipm&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-59-1.png" width="768" /></p>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(<span class="dv">1</span>:<span class="dv">52138</span>, freq$Freq.ipm.,
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(<span class="dv">1</span>:<span class="dv">52138</span>, freq$Freq.ipm.,
   <span class="dt">xlab =</span> <span class="ot">NA</span>, <span class="dt">ylab =</span> <span class="st">&quot;ipm&quot;</span>,
   <span class="dt">las =</span> <span class="dv">1</span>,
-  <span class="dt">log =</span> <span class="st">&quot;yx&quot;</span>)</code></pre></div>
+  <span class="dt">log =</span> <span class="st">&quot;yx&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-60-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">freq %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+freq %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dv">1</span>:<span class="dv">52138</span>, Freq.ipm.))+
 <span class="st">  </span><span class="kw">geom_point</span>()+
 <span class="st">  </span><span class="kw">xlab</span>(<span class="st">&quot;&quot;</span>)+
 <span class="st">  </span><span class="kw">ylab</span>(<span class="st">&quot;ipm&quot;</span>)+
-<span class="st">  </span><span class="kw">scale_y_log10</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">scale_y_log10</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-61-1.png" width="768" /></p>
 </div>
 
@@ -286,20 +330,25 @@ freq %&gt;%
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
 <span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
 <span class="kw">rug</span>(homo$s.duration.ms)
-<span class="kw">rug</span>(homo$vowel.duration.ms, <span class="dt">side =</span> <span class="dv">2</span>)</code></pre></div>
+<span class="kw">rug</span>(homo$vowel.duration.ms, <span class="dt">side =</span> <span class="dv">2</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-62-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms, <span class="dt">color =</span> orientation)) +
 <span class="st">  </span><span class="kw">geom_point</span>() +
-<span class="st">  </span><span class="kw">geom_rug</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_rug</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-63-1.png" width="768" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms, <span class="dt">color =</span> orientation)) +
 <span class="st">  </span><span class="kw">geom_point</span>() +
-<span class="st">  </span><span class="kw">geom_rug</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_rug</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-64-1.png" width="768" /></p>
 </div>
 
@@ -337,49 +386,61 @@ freq %&gt;%
 <ul>
 <li>R base</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
-<span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">120</span>, <span class="dt">v =</span> <span class="dv">60</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
+<span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">120</span>, <span class="dt">v =</span> <span class="dv">60</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-65-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_point</span>() +
 <span class="st">  </span><span class="kw">geom_hline</span>(<span class="dt">yintercept =</span> <span class="kw">mean</span>(homo$vowel.duration.ms))+
-<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">60</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">60</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-66-1.png" width="768" /></p>
 <ul>
 <li>R base</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
 <span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">120</span>, <span class="dt">lty =</span> <span class="dv">2</span>)
-<span class="kw">abline</span>(<span class="dt">v =</span> <span class="dv">60</span>, <span class="dt">lwd =</span> <span class="dv">42</span>)</code></pre></div>
+<span class="kw">abline</span>(<span class="dt">v =</span> <span class="dv">60</span>, <span class="dt">lwd =</span> <span class="dv">42</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-67-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_point</span>() +
 <span class="st">  </span><span class="kw">geom_hline</span>(<span class="dt">yintercept =</span> <span class="dv">120</span>, <span class="dt">linetype =</span> <span class="dv">2</span>)+
-<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">60</span>, <span class="dt">size =</span> <span class="dv">5</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">60</span>, <span class="dt">size =</span> <span class="dv">5</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-68-1.png" width="768" /></p>
 <ul>
 <li>R base</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">plot</span>(homo$s.duration.ms, homo$vowel.duration.ms)
 <span class="kw">abline</span>(<span class="dt">h =</span> <span class="dv">120</span>, <span class="dt">lty =</span> <span class="dv">4</span>)
-<span class="kw">abline</span>(<span class="dt">v =</span> <span class="dv">60</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</code></pre></div>
+<span class="kw">abline</span>(<span class="dt">v =</span> <span class="dv">60</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-69-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms, vowel.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_point</span>() +
 <span class="st">  </span><span class="kw">geom_hline</span>(<span class="dt">yintercept =</span> <span class="dv">120</span>, <span class="dt">linetype =</span> <span class="dv">4</span>)+
-<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-70-1.png" width="768" /></p>
 </div>
 <div id="barplots-basics" class="slide section level3">
@@ -387,14 +448,18 @@ freq %&gt;%
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(homo$age, <span class="dt">names.arg =</span> homo$speaker)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">barplot</span>(homo$age, <span class="dt">names.arg =</span> homo$speaker)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-71-1.png" width="768" /></p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(speaker, age)) +
-<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-72-1.png" width="768" /></p>
 </div>
 <div id="barplots-color" class="slide section level3">
@@ -402,15 +467,19 @@ freq %&gt;%
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">barplot</span>(homo$age, <span class="dt">names.arg =</span> homo$speaker,
-  <span class="dt">col =</span> homo$orientation)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">barplot</span>(homo$age, <span class="dt">names.arg =</span> homo$speaker,
+  <span class="dt">col =</span> homo$orientation)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-73-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(speaker, age, <span class="dt">fill =</span> orientation)) +
-<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-74-1.png" width="768" /></p>
 </div>
 <div id="boxplots-basics" class="slide section level3">
@@ -419,14 +488,18 @@ freq %&gt;%
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(homo$s.duration.ms~homo$orientation)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">boxplot</span>(homo$s.duration.ms~homo$orientation)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-75-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(orientation, s.duration.ms)) +
-<span class="st">  </span><span class="kw">geom_boxplot</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_boxplot</span>()
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-76-1.png" width="768" /></p>
 </div>
 
@@ -438,7 +511,8 @@ freq %&gt;%
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
 <span class="kw">boxplot</span>(homo$s.duration.ms~homo$orientation)
 <span class="kw">stripchart</span>(homo$s.duration.ms ~<span class="st"> </span>homo$orientation,
-  <span class="dt">pch =</span> <span class="dv">1</span>, <span class="dt">vertical =</span> T, <span class="dt">add =</span> T)</code></pre></div>
+  <span class="dt">pch =</span> <span class="dv">1</span>, <span class="dt">vertical =</span> T, <span class="dt">add =</span> T)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-77-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
@@ -460,17 +534,21 @@ freq %&gt;%
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(homo$s.duration.ms~homo$orientation)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">boxplot</span>(homo$s.duration.ms~homo$orientation)
 <span class="kw">stripchart</span>(homo$s.duration.ms~homo$orientation,
-  <span class="dt">pch =</span> <span class="dv">1</span>, <span class="dt">vertical =</span> T, <span class="dt">add =</span> T, <span class="dt">method =</span> <span class="st">&quot;jitter&quot;</span>)</code></pre></div>
+  <span class="dt">pch =</span> <span class="dv">1</span>, <span class="dt">vertical =</span> T, <span class="dt">add =</span> T, <span class="dt">method =</span> <span class="st">&quot;jitter&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-79-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(orientation, s.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_boxplot</span>() +
-<span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="fl">0.5</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="fl">0.5</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-80-1.png" width="768" /></p>
 </div>
 
@@ -518,13 +596,17 @@ grid.arrange(b1, b2, b3, nrow = 1)
 <li>boxplot: nominal varible and quantitative varibles</li>
 <li>jittered points: two nominal varibles</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mtcars %&gt;%<span class="st"> </span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+mtcars %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">newvar =</span> mpg &gt;<span class="st"> </span><span class="dv">22</span>,
          <span class="dt">newvr =</span> mpg &lt;<span class="st"> </span><span class="dv">17</span>) %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(newvr, newvar, <span class="dt">color =</span> newvar))+
-<span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="fl">0.2</span>)</code></pre></div>
+<span class="st">  </span><span class="kw">geom_jitter</span>(<span class="dt">width =</span> <span class="fl">0.2</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-82-1.png" width="768" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">log</span>(<span class="dv">0</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">log</span>(<span class="dv">0</span>)
+</code></pre></div>
 <pre><code>## [1] -Inf</code></pre>
 </div>
 <div id="histogram-basics" class="slide section level3">
@@ -532,26 +614,33 @@ grid.arrange(b1, b2, b3, nrow = 1)
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(homo$s.duration.ms)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">hist</span>(homo$s.duration.ms)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-83-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms)) +
-<span class="st">  </span><span class="kw">geom_histogram</span>()</code></pre></div>
+<span class="st">  </span><span class="kw">geom_histogram</span>()
+</code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-84-1.png" width="768" /> How many histogram bins do we need? * [Sturgers 1926] <em>nclass.Sturges(adyghe<span class="math inline">\(F1)_ * [Scott 1979] _nclass.scott(adyghe\)</span>F1)</em> * [Freedman, Diaconis 1981] <em>nclass.FD(adyghe$F1)</em></p>
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(homo$s.duration.ms,
-     <span class="dt">breaks =</span> <span class="kw">nclass.FD</span>(homo$s.duration.ms))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">hist</span>(homo$s.duration.ms,
+     <span class="dt">breaks =</span> <span class="kw">nclass.FD</span>(homo$s.duration.ms))
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-85-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">homo %&gt;%
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+homo %&gt;%
 <span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms)) +
 <span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="kw">nclass.FD</span>(homo$s.duration.ms))
 </code></pre></div>
@@ -562,17 +651,20 @@ grid.arrange(b1, b2, b3, nrow = 1)
 <ul>
 <li>base R</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(homo$s.duration.ms, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
+<span class="kw">hist</span>(homo$s.duration.ms, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)
+</code></pre></div>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-87-1.png" width="768" /> </p>
 <ul>
 <li>dplyr, ggplot2</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
-homo %&gt;%
-<span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms)) +
-<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre></div>
-<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+<p>homo %&gt;% <br />
+<span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(s.duration.ms)) + <br />
+<span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">fill =</span> <span class="st">&quot;lightblue&quot;</span>)</p>
 </code></pre></div>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+</code></pre>
 <p><img src="https://agricolamz.github.io/2017-MAG_R_course/Lec_2_Data_manipulation_and_visualization_files/figure-slidy/unnamed-chunk-88-1.png" width="768" /></p>
 <p>Histogram and density plots with multiple groups</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">
@@ -640,7 +732,7 @@ qplot(gear, mpg, data=mtcars, geom=c("boxplot", "jitter"),  <br />
 <p>More on <a href="https://www.r-bloggers.com/ggplot2-cheatsheet-for-visualizing-distributions/">r-bloggers</a></p>
 </div>
 
-<div id="more-examples" class="slide section level3">
+<div id="scatterplot-geomdensity" class="slide section level3">
 <h1>7.1 a scatterplot with geomdensity2d and marginal density plots</h1>
 <p>First, we'll define three plots and a legend. Note that the yDen plot has had
  it's coordinates flipped (the x becomes y and vice versa) using the function coordflip. 
@@ -673,7 +765,6 @@ grid.arrange(xDen+theme(legend.position = "none"), <br />
 </code></pre></div>
 <p><img src="http://people.duke.edu/~csm29/ggplot2/r/file71.png" width="768" /></p>
 <p>Source: <a href="http://people.duke.edu/~csm29/ggplot2/ggplot2.html">http://people.duke.edu/~csm29/ggplot2/ggplot2.html</a></p>
-
 </div>
 
 
