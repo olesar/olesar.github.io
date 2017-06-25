@@ -3,16 +3,16 @@
 ### Rival forms in Russian 
 * Соня Никифорова, Яна Курмачева. <a href="prepositions.nb.html">Распределение предлогов ПРО и О/ОБ в речи</a>
 * Дарья Шершнева, Варвара Гуц. <a href="guts_shershneva_cho.html">Pronunciation of the word “что” in Russian dialects</a>
-* Василиса Жигульская. <a href="">Initial [n] in the third person pronouns in prepositional constructions in the dialect of Mikhalevskaya village</a>
-* Алексей Шелепов, Дарья Лапенкова. <a href="">Мигнуть / подмигнуть usage</a>
-* Наталья Акутина. <a href="">Russian multiverb constructions</a>
-* Вероника Данилова, Мария Пономарева. <a href="">Партитивное использование формы генитива с местоимениями</a>
-* Ангелина Присяжная. <a href="">Тенденции выбора падежной формы в конструкциях типа “Фермер продал три овцы / трех овец”</a>
-* Иван Левин. <a href="">Usage and semantics of seven Russian polysemic words (sociolinguistic and semantic aspects)</a>
-* Мария Сапожникова, Настя Долгова. <a href="">The Variability in conjugation of the verb “чтить”</a>
+* Василиса Жигульская. <a href="zhigulskaya_pronouns.html">Initial [n] in the third person pronouns in prepositional constructions in the dialect of Mikhalevskaya village</a>
+* Алексей Шелепов, Дарья Лапенкова. <a href="mignut_Lapenkova_Shelepov.html">Мигнуть / подмигнуть usage</a>
+* Наталья Акутина. <a href="R akutina 2.pdf">Russian multiverb constructions</a>
+* Вероника Данилова, Мария Пономарева. <a href="partitives-danilova-ponomareva.html">Партитивное использование формы генитива с местоимениями</a>
+* Ангелина Присяжная. <a href="ovtsy_prisyazhnaya.html">Тенденции выбора падежной формы в конструкциях типа “Фермер продал три овцы / трех овец”</a>
+* Мария Сапожникова, Настя Долгова. <a href="chtit.html">The Variability in conjugation of the verb “чтить”</a>
+* Иван Левин. <a href="Levin_everyday_lexicon.nb.html">Usage and semantics of seven Russian polysemic words (sociolinguistic and semantic aspects)</a>
 * Анастасия Лопухина. <a href="">Generic VS nongeneric utterances interpretation in healthy population and in population with aphasia</a>
-* Кристинэ Багдасарян. <a href="">Predicting next word (based on the Russian Sentence corpus data)</a>
-* Мария Грабовская. <a href="">The order of acquisition of spatial prepositions in Russian</a>
+* Кристинэ Багдасарян. <a href="Bagdasaryan_R.pdf">Predicting next word (based on the Russian Sentence corpus data)</a>
+* Мария Грабовская. <a href="prepositions_acquisition.html">The order of acquisition of spatial prepositions in Russian</a>
 
 ### Rival forms in other languages. Typology
 * Елизавета Кузьменко. <a href="">Attributive participial clauses in English and learner English</a>
