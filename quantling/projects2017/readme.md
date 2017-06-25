@@ -15,7 +15,7 @@
 * Мария Грабовская. <a href="prepositions_acquisition.html">The order of acquisition of spatial prepositions in Russian</a>
 
 ### Rival forms in other languages. Typology
-* Елизавета Кузьменко. <a href="Attributive_participial_clauses_in_English_and_learner_English_kuzmenko.ipynb">Attributive participial clauses in English and learner English</a>
+* Елизавета Кузьменко. <a href="https://github.com/olesar/olesar.github.io/blob/master/quantling/projects2017/Attributive_participial_clauses_in_English_and_learner_English_kuzmenko.ipynb">Attributive participial clauses in English and learner English</a>
 * Илья Чечуро, Полина Касьянова. <a href="Udi_AOP_Chechuro_Kasyanova.html">Udi participle affixes</a>
 * Евгения Мурзинова, Мария Ярославцева. <a href="">Expressing Plurality in West Circassian</a>
 * Айгуль Закирова. <a href="">The debitive nominalization in Moksha: a case of differential object marking</a>
