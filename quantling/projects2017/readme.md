@@ -15,15 +15,15 @@
 * Мария Грабовская. <a href="prepositions_acquisition.html">The order of acquisition of spatial prepositions in Russian</a>
 
 ### Rival forms in other languages. Typology
-* Елизавета Кузьменко. <a href="">Attributive participial clauses in English and learner English</a>
-* Илья Чечуро, Полина Касьянова. <a href="">Udi participle affixes</a>
+* Елизавета Кузьменко. <a href="kuzmenko.html">Attributive participial clauses in English and learner English</a>
+* Илья Чечуро, Полина Касьянова. <a href="Udi_AOP_Chechuro_Kasyanova.html">Udi participle affixes</a>
 * Евгения Мурзинова, Мария Ярославцева. <a href="">Expressing Plurality in West Circassian</a>
 * Айгуль Закирова. <a href="">The debitive nominalization in Moksha: a case of differential object marking</a>
 * Дарья Бикина. <a href="">Irregular gaps in the systems of indefinite pronouns based on interrogatives</a>
 
 ### Loan words
 * Михаил Садов, Сергей Михайлов. <a href="">Интерферирующее влияние итальянского языка на категорию рода заимствованных из него слов в русском языке</a>
-* Кирилл Милинцевич, Иван Родин. <a href="">Barbarisms in Russian web discourse</a>
+* Кирилл Милинцевич, Иван Родин. <a href="Barbarisms.html">Barbarisms in Russian web discourse</a>
 * Екатерина Гриднева, Иван Саркисов. <a href="">Age differences in the using of English borrowings in German</a>
 * Сунигель Менес, Максим Боде. <a href="">Indirect vs. direct borrowing in Northern Chinchay Quechua</a>
 * Денис Арсентьев. <a href="">The variability of number in Latin borrowings in the English language</a>
